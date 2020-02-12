@@ -19,9 +19,13 @@ public class Italy2 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        readFile.getData("config.properties", "haha");
-        
-        
+        boolean data = readFile.getData("config.properties", "doHax");
+        if (data == true) {
+            System.out.println("Is True");
+        }
+        else {
+            System.out.println("Is False");
+        }
         
     }
     

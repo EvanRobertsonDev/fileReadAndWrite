@@ -16,10 +16,13 @@ import java.util.Properties;
  */
 public class readFile {
     
-    public boolean getData(String fileName, String property) {
+    public static boolean getData(String fileName, String property) {
         
+        //Make array
         String[] arr = new String[100];
+        //create return bool
         boolean config = false;
+        //new file reader
         FileReader prop = null;
         try {
             prop = new FileReader("config.properties");
@@ -27,6 +30,8 @@ public class readFile {
             System.err.println(e);
         }
         BufferedReader buffer = new BufferedReader(prop);
+        
+        //Loop to check each line for true or false if it contains the term searched
         for (int i = 0; i < 100; i++) {
             try {
                 arr[i] = buffer.readLine();
@@ -51,6 +56,7 @@ public class readFile {
                 System.err.println(e);
             }
         }
+        //return
         if(config == true) {
              return(true);   
         }
