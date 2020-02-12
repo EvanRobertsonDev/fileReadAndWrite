@@ -5,10 +5,6 @@
  */
 
 package italy2;
-import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.Properties;
 /**
  *
  * @author evrob0095

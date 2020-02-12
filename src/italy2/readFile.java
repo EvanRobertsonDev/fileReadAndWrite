@@ -6,9 +6,6 @@
 
 package italy2;
 import java.io.*;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import java.util.Properties;
 
 /**
  *
@@ -25,7 +22,7 @@ public class readFile {
         //new file reader
         FileReader prop = null;
         try {
-            prop = new FileReader("config.properties");
+            prop = new FileReader(fileName);
         } catch(FileNotFoundException e){
             System.err.println(e);
         }
